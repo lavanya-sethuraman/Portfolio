@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="navbar">
+            <a class="navbar-brand name">Lavanya Sethuraman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#profile">About</a>
+                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link" href="Resume.pdf" target="_blank">Resume</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <div class="container">
+                    <h3 class="jumboName"> Hello! I'm Lavanya! </h3>
+                    <h4>Web Developer based in Atlanta</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="profile">
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <div class="container">
+                    <h1>About me</h1>
+
+                    <p>I am a fullstack developer, currently focused on building responsive, web applications. Recent graduate
+                        of Thinkful fullstack Developer program, I am looking forward to opportunities, to work on interesting
+                        and challenging projects, to contribute and learn. Unafraid to use newer cutting edge frameworks
+                        and technologies, I apply them appropriately considering the project and goals at hand. My natural
+                        strength in problem analysis and solution made me pursue the field of Information Technology and
+                        I am genuinely interested in making technology work for greater good of the humanity.
+                    </p>
+                    <h3>Skills:</h3>
+                    <p>React.js, jQuery, Node.js, HTML, CSS, Git, GitHub, NPM, REST APIs, Express.js, Passport.js, MongoDB,
+                        Responsive mobile-first design, TDD with Mocha, chai, Enzyme, Bootstrap, Semantic UI, Material UI</p>
+                    <p>When I am not working, I am mostly shopping or trying non-traditional cuisines at home. In fact, at some
+                        point in my life, I even considered running a fusion themed restaurant! I love being close to nature
+                        and have special interest in growing plants.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <section class="container" id="portfolio">
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <div class="container">
+                    <div id="accordion" role="tablist">
+                        <h1>Selected Projects</h1>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="app1">
+                                <h5 class="mb-0">
+                                    <a class="white" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+                                        Transit App
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img class="app-image" src="images/transit-app.png" alt="" class="rounded">
+                                            </div>
+                                            <div class="col">
+                                                <p>Using Google Maps API, this application provides transit options and instructions
+                                                    from Point A to Point B, thereby enabling fuel conservation, encouraging
+                                                    public transportation. </p>
+                                                <hr>
+                                                <br>
+                                                <p>Skills Used</p>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>Html</li>
+                                                            <li>CSS</li>
+                                                            <li>Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>jQuery</li>
+                                                            <li>Google Maps API</li>
+                                                            <li>Bootstrap</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <br>
+                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Transit-Info-App" target="_blank" role="button">Code</a>
+                                                <a class="btn btn-info" href="https://lavanya-sethuraman.github.io/Transit-Info-App/" target="_blank" role="button">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="app2">
+                                <h5 class="mb-0">
+                                    <a class="white" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                                        Movie Diary
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img class="app-image" src="images/movie-diary.png" alt="" class="rounded">
+                                            </div>
+                                            <div class="col">
+                                                <p>"Memories make us rich". This web application captures memories of the fun
+                                                    times associated with watching movies and capturing the same in a diary
+                                                    format. Using TMDB API, lookup a movie, get details and store as a "memory"
+                                                    card in the app. </p>
+                                                <hr>
+                                                <br>
+                                                <p>Skills Used</p>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>Node.js</li>
+                                                            <li>Express.js</li>
+                                                            <li>Passport.js</li>
+                                                            <li>Tmdb Api</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>Semantic UI</li>
+                                                            <li> Mocha</li>
+                                                            <li>Chai</li>
+                                                            <li>mLab</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <br>
+                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Node-Capstone" target="_blank" role="button">Code</a>
+                                                <a class="btn btn-info" href="https://movie-diary.herokuapp.com/" target="_blank" role="button">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" role="tab" id="app3">
+                                <h5 class="mb-0">
+                                    <a class="white" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+                                        Expense Manager
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img class="app-image" src="images/expense-manager.png" alt="" class="rounded">
+                                            </div>
+                                            <div class="col">
+                                                <p>Using newer UI frameworks and technologies, this responsive web application
+                                                    allows the user to set monthly budget by category, add expenses and view
+                                                    history using charts. Backend functionality is implemented using Node.js
+                                                    tech stack. Developed using functional programming where applicable.</p>
+                                                <hr>
+                                                <br>
+                                                <p>Skills Used</p>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>React.js</li>
+                                                            <li>Redux</li>
+                                                            <li>Material UI</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li> Node.js</li>
+                                                            <li>mLab</li>
+                                                            <li>Enzyme</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <br>
+                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/expense-manager-client" target="_blank" role="button">Code</a>
+                                                <a class="btn btn-info" href="https://expense-manager.netlify.com/" target="_blank" role="button">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <section class="container" id="contact">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container contact">
+                <h1>Contact Details</h1>
+                <p></p>
+                <a style="font-size: 20px" href="mailto:lavanya.sethuraman23@gmail.com">lavanya.sethuraman23@gmail.com</a>
+                <p></p>
+                <p>
+                    <a href="https://www.linkedin.com/in/lavanya-sethuraman" target="_blank ">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/lavanya-sethuraman" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="padding-top: 1rem">Made with ❤ by Lavanya Sethuraman</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

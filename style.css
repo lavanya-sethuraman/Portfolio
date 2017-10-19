@@ -1,0 +1,148 @@
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Libre Baskerville, serif;
+    font-size: 16px;
+    color: #444;
+}
+
+hr {
+    border-color: #1D2E26;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 3px 0 0;
+    margin: 0 auto;
+    width: 60%;
+    clear: both;
+}
+
+.collapse hr {
+    border-color: #1D2E26;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+}
+
+.navbar-nav {
+    font-family: sans-serif;
+    float:right;
+    color:white;
+}
+
+.name {
+    color:white !important;
+}
+
+.jumbotron {
+    background-color: white ;
+}
+
+ .hero .jumbotron {
+    background:inherit;
+    height: 43em;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: "Montserrat", cursive;
+}
+
+.hero{
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .jumbotron .jumboName {
+    margin-top: 4rem;
+    color: #1D2E26;
+    font-size: 4.5rem;
+}
+
+.hero .jumbotron h4 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.fa {
+    font-size: 60px;
+    margin-right: 25px;
+}
+
+.col {
+    text-align: left;
+}
+
+.btn-info {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+#profile h1 {
+    margin-bottom: 50px;
+}
+
+#profile p {
+    text-align: left;
+    font-size: 20px;
+}
+
+#profile h3 {
+    text-align: left;
+}
+
+#portfolio h1 {
+    margin-bottom: 55px;
+}
+
+.container {
+    text-align: center;
+    line-height: 1.37;
+}
+
+.white {
+    color:white !important;
+}
+
+.portfolio, .profile {
+    clear: both;
+    color: #fff;
+    margin-top: 8rem;
+}
+
+.footer{
+    width: 2rem;
+}
+
+.app-image {
+    height: 20rem;
+    width: inherit;
+    border: 1px solid gray;
+}
+
+footer {
+    background-color: #343a40;
+    color:white;
+    text-align: center;
+    font-size: 0.7rem;
+    height:56px;
+}
+
+footer  a {
+    color: white;
+    font-size: 15px;
+}
+
+.contact a {
+    color: black;
+}
+
+.card-header {
+    background-color: #343a40;
+}
