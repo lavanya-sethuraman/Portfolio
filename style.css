@@ -146,3 +146,6 @@ footer  a {
 .card-header {
     background-color: #343a40;
 }
+.card {
+    margin-bottom:80px;
+}
