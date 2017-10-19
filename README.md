@@ -1,4 +1,4 @@
-**Live**:
+**Live**:https://lavanya-sethuraman.github.io/Portfolio
 
 This is my portfolio site, showcasing some of my favorite projects so far.
 I built it using HTML5, Bootstrap, CSS3.
