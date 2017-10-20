@@ -122,8 +122,8 @@ hr {
 
 .app-image {
     height: 20rem;
-    width: inherit;
     border: 1px solid gray;
+    margin-bottom:25px;
 }
 
 footer {
