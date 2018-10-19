@@ -5,7 +5,7 @@
 
 body {
     font-family: Libre Baskerville, serif;
-    font-size: 16px;
+    font-size: 15px;
     color: #444;
 }
 
@@ -60,7 +60,7 @@ hr {
 
 .hero .jumbotron .jumboName {
     margin-top: 4rem;
-    color: #1D2E26;
+    color: #fff;
     font-size: 4.5rem;
 }
 
@@ -90,7 +90,7 @@ hr {
 
 #profile p {
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 #profile h3 {
@@ -148,4 +148,7 @@ footer  a {
 }
 .carousel-control-prev {
     left: -25px;
+}
+.center {
+    text-align: center;
 }
