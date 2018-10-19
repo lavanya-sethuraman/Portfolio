@@ -106,8 +106,9 @@ hr {
     line-height: 1.37;
 }
 
-.white {
-    color:white !important;
+.black {
+    color:black !important;
+    font-size: 50px;
 }
 
 .portfolio, .profile {
@@ -142,10 +143,9 @@ footer  a {
 .contact a {
     color: black;
 }
-
-.card-header {
-    background-color: #343a40;
+.carousel-control-next {
+    right: -25px;
 }
-.card {
-    margin-bottom:80px;
+.carousel-control-prev {
+    left: -25px;
 }

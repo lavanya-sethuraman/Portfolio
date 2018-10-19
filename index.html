@@ -8,6 +8,7 @@
         crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8">
     <title>Portfolio</title>
@@ -58,8 +59,8 @@
                             and have special interest in growing plants.
                     </p>
                     <h3>Skills:</h3>
-                    <p>React.js, Angular5, jQuery, Node.js, HTML, CSS, Git, GitHub, NPM, REST APIs, Express.js, Passport.js, MongoDB,
-                        Responsive mobile-first design, TDD with Mocha, chai, Enzyme, Bootstrap, Semantic UI, Material Design</p>
+                    <p>ReactJS, Angular2,  AngularJS, HTML5, CSS3, Javascript, jQuery, NodeJS, ExpressJS, Git, GitHub, NPM, REST APIs, PassportJS, MongoDB,
+                        Responsive mobile-first design, TDD with Mocha, chai, Enzyme, Bootstrap, Semantic UI, Google Material Design</p>
                     
                 </div>
             </div>
@@ -69,209 +70,163 @@
     <hr class="my-4">
 
     <section class="container" id="portfolio">
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
         <div class="container-fluid">
             <div class="jumbotron">
                 <div class="container">
-                    <div id="accordion" role="tablist">
-                        <h1>Selected Projects</h1>
-                        <div class="card one">
-                            <div class="card-header" role="tab" id="app1">
-                                <h5 class="mb-0">
-                                    <a class="white" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-                                        Transit App
-                                    </a>
-                                </h5>
-                            </div>
+                    <h1>Fun Projects</h1>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img class="app-image" src="images/movie-diary.png" alt="" class="rounded">
+                                        </div>
+                                        <div class="col">
+                                            <p>"Memories make us rich". This web application captures memories of the fun
+                                                times associated with watching movies and capturing the same in a diary
+                                                format. Using TMDB API, lookup a movie, get details and store as a "memory"
+                                                card in the app. </p>
+                                            <hr>
+                                            <br>
+                                            <p>Skills Used</p>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>Node.js</li>
+                                                        <li>Express.js</li>
+                                                        <li>Passport.js</li>
+                                                        <li>Tmdb Api</li>
 
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img class="app-image" src="images/transit-app.png" alt="" class="rounded">
-                                            </div>
-                                            <div class="col">
-                                                <p>Using Google Maps API, this application provides transit options and instructions
-                                                    from Point A to Point B, thereby enabling fuel conservation, encouraging
-                                                    public transportation. </p>
-                                                <hr>
-                                                <br>
-                                                <p>Skills Used</p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>Html</li>
-                                                            <li>CSS</li>
-                                                            <li>Javascript</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>jQuery</li>
-                                                            <li>Google Maps API</li>
-                                                            <li>Bootstrap</li>
-                                                        </ul>
-                                                    </div>
+                                                    </ul>
                                                 </div>
-                                                <hr>
-                                                <br>
-                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Transit-Info-App" target="_blank" role="button">Code</a>
-                                                <a class="btn btn-info" href="https://lavanya-sethuraman.github.io/Transit-Info-App/" target="_blank" role="button">Demo</a>
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>Semantic UI</li>
+                                                        <li> Mocha</li>
+                                                        <li>Chai</li>
+                                                        <li>mLab</li>
+
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <hr>
+                                            <br>
+                                            <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Node-Capstone" target="_blank" role="button">Code</a>
+                                            <a class="btn btn-info" href="https://movie-diary.herokuapp.com/" target="_blank" role="button">Demo</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card two">
-                            <div class="card-header" role="tab" id="app2">
-                                <h5 class="mb-0">
-                                    <a class="white" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-                                        Movie Diary
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img class="app-image" src="images/movie-diary.png" alt="" class="rounded">
-                                            </div>
-                                            <div class="col">
-                                                <p>"Memories make us rich". This web application captures memories of the fun
-                                                    times associated with watching movies and capturing the same in a diary
-                                                    format. Using TMDB API, lookup a movie, get details and store as a "memory"
-                                                    card in the app. </p>
-                                                <hr>
-                                                <br>
-                                                <p>Skills Used</p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>Node.js</li>
-                                                            <li>Express.js</li>
-                                                            <li>Passport.js</li>
-                                                            <li>Tmdb Api</li>
-
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>Semantic UI</li>
-                                                            <li> Mocha</li>
-                                                            <li>Chai</li>
-                                                            <li>mLab</li>
-
-                                                        </ul>
-                                                    </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img class="app-image" src="images/transit-app.png" alt="" class="rounded">
+                                        </div>
+                                        <div class="col">
+                                            <p>Using Google Maps API, this application provides transit options and instructions
+                                                from Point A to Point B, thereby enabling fuel conservation, encouraging
+                                                public transportation. </p>
+                                            <hr>
+                                            <br>
+                                            <p>Skills Used</p>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>Html</li>
+                                                        <li>CSS</li>
+                                                        <li>Javascript</li>
+                                                    </ul>
                                                 </div>
-                                                <hr>
-                                                <br>
-                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Node-Capstone" target="_blank" role="button">Code</a>
-                                                <a class="btn btn-info" href="https://movie-diary.herokuapp.com/" target="_blank" role="button">Demo</a>
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>jQuery</li>
+                                                        <li>Google Maps API</li>
+                                                        <li>Bootstrap</li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <hr>
+                                            <br>
+                                            <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Transit-Info-App" target="_blank" role="button">Code</a>
+                                            <a class="btn btn-info" href="https://lavanya-sethuraman.github.io/Transit-Info-App/" target="_blank" role="button">Demo</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="card three">
-                            <div class="card-header" role="tab" id="app3">
-                                <h5 class="mb-0">
-                                    <a class="white" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-                                        Expense Manager
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col" >
-                                                <img class="app-image" src="images/expense-manager.png" alt="" class="rounded">
-                                            </div>
-                                            <div class="col">
-                                                <p>Using newer UI frameworks and technologies, this responsive web application
-                                                    allows the user to set monthly budget by category, add expenses and view
-                                                    history using charts. Backend functionality is implemented using Node.js
-                                                    tech stack. Developed using functional programming where applicable.</p>
-                                                <hr>
-                                                <br>
-                                                <p>Skills Used</p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>React.js</li>
-                                                            <li>Redux</li>
-                                                            <li>Material UI</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li> Node.js</li>
-                                                            <li>mLab</li>
-                                                            <li>Enzyme</li>
-                                                        </ul>
-                                                    </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col" >
+                                            <img class="app-image" src="images/expense-manager.png" alt="" class="rounded">
+                                        </div>
+                                        <div class="col">
+                                            <p>Using newer UI frameworks and technologies, this responsive web application
+                                                allows the user to set monthly budget by category, add expenses and view
+                                                history using charts. Backend functionality is implemented using Node.js
+                                                tech stack. Developed using functional programming where applicable.</p>
+                                            <hr>
+                                            <br>
+                                            <p>Skills Used</p>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>React.js</li>
+                                                        <li>Redux</li>
+                                                        <li>Material UI</li>
+                                                    </ul>
                                                 </div>
-                                                <hr>
-                                                <br>
-                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/expense-manager-client" target="_blank" role="button">Code</a>
-                                                <a class="btn btn-info" href="https://expense-manager.netlify.com/" target="_blank" role="button">Demo</a>
+                                                <div class="col">
+                                                    <ul>
+                                                        <li> Node.js</li>
+                                                        <li>mLab</li>
+                                                        <li>Enzyme</li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <hr>
+                                            <br>
+                                            <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/expense-manager-client" target="_blank" role="button">Code</a>
+                                            <a class="btn btn-info" href="https://expense-manager.netlify.com/" target="_blank" role="button">Demo</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
-                        <div class="card four">
-                            <div class="card-header" role="tab" id="app4">
-                                <h5 class="mb-0">
-                                    <a class="white" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-                                        Project Management Tool
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col" >
-                                                <img class="app-image" src="images/project-management-tool.png" alt="" class="rounded">
-                                            </div>
-                                            <div class="col">
-                                                <p>This responsive web application
-                                                    allows the Project manager to keep track of all their projects.
-                                                    Frontend is implemented using React.js and Bootstrap. 
-                                                    Backend functionality is implemented using Node.js </p>
-                                                <hr>
-                                                <br>
-                                                <p>Skills Used</p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>React.js</li>
-                                                            <li>Redux</li>
-                                                            <li>React Bootstrap</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>Node.js</li>
-                                                            <li>mLab</li>
-                                                            <li>Enzyme</li>
-                                                        </ul>
-                                                    </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col" >
+                                            <img class="app-image" src="images/project-management-tool.png" alt="" class="rounded">
+                                        </div>
+                                        <div class="col">
+                                            <p>This responsive web application
+                                                allows the Project manager to keep track of all their projects.
+                                                Frontend is implemented using React.js and Bootstrap.
+                                                Backend functionality is implemented using Node.js </p>
+                                            <hr>
+                                            <br>
+                                            <p>Skills Used</p>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>React.js</li>
+                                                        <li>Redux</li>
+                                                        <li>React Bootstrap</li>
+                                                    </ul>
                                                 </div>
-                                                <hr>
-                                                <br>
-                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Pro5-Solutions" target="_blank" role="button">Code</a>
-                                                <a class="btn btn-info" href="https://project-management-tool.netlify.com" target="_blank" role="button">Demo</a>
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>Node.js</li>
+                                                        <li>mLab</li>
+                                                        <li>Enzyme</li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <hr>
+                                            <br>
+                                            <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Pro5-Solutions" target="_blank" role="button">Code</a>
+                                            <a class="btn btn-info" href="https://project-management-tool.netlify.com" target="_blank" role="button">Demo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -280,9 +235,14 @@
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev black" href="#projectCarousel" role="button" data-slide="prev">
+                <i class="fas fa-angle-left black"></i>
+            </a>
+            <a class="carousel-control-next black" href="#projectCarousel" role="button" data-slide="next">
+                <i class="fas fa-angle-right black"></i>
+            </a>
         </div>
-        </div>
-    </section>
+         </section>
 
     <hr class="my-4">
 
