@@ -52,7 +52,8 @@ hr {
     font-family: "Montserrat", cursive;
 }
 
-.hero{
+.hero .jumbotron{
+    margin-top: 4rem;
     background-image: url(images/hero.jpg);
     background-size: cover;
     background-position: center;
