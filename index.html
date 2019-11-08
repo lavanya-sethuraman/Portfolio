@@ -2,271 +2,463 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script async type="text/javascript" src="bulma.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="navbar">
-            <a class="navbar-brand name">Lavanya Sethuraman</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#profile">About</a>
-                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-                    <a class="nav-item nav-link" href="Resume.pdf" target="_blank">Resume</a>
-                    <a class="nav-item nav-link" href="#contact">Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <div class="container">
-                    <h3 class="jumboName"> Hello! I'm Lavanya! </h3>
-                    <h4>Web Developer based in Atlanta</h4>
-                </div>
-            </div>
+<!-- Navigation bar -->
+<nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </section>
+    </div>
 
-    <section class="container" id="profile">
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <div class="container">
-                    <h1>About me</h1>
-
-                    <p>I am a fullstack developer, currently focused on building responsive, web applications. Recent graduate
-                        of Thinkful fullstack Developer program, I am looking forward to opportunities, to work on interesting
-                        and challenging projects, to contribute and learn. Unafraid to use newer cutting edge frameworks
-                        and technologies, I apply them appropriately considering the project and goals at hand. My natural
-                        strength in problem analysis and solution made me pursue the field of Information Technology and
-                        I am genuinely interested in making technology work for greater good of the humanity.
-                    </p>
-                    <h3>Skills:</h3>
-                    <p>React.js, jQuery, Node.js, HTML, CSS, Git, GitHub, NPM, REST APIs, Express.js, Passport.js, MongoDB,
-                        Responsive mobile-first design, TDD with Mocha, chai, Enzyme, Bootstrap, Semantic UI, Material UI</p>
-                    <p>When I am not working, I am mostly shopping or trying non-traditional cuisines at home. In fact, at some
-                        point in my life, I even considered running a fusion themed restaurant! I love being close to nature
-                        and have special interest in growing plants.
-                    </p>
-                </div>
-            </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-end">
+            <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+                <span>About</span>
+            </a>
+            <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+                <span>Services</span>
+            </a>
+            <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+                <span>Resume</span>
+            </a>
+            <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+                <span>Portfolio</span>
+            </a>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <hr class="my-4">
+<!-- Header -->
+<section class="hero is-info is-fullheight is-fullheight-with-navbar">
+    <div class="hero-body">
+        <div class="container">Hello! I am
+            <h1 class="title is-1">
+                Lavanya Sethuraman
+            </h1>
+            <h2 class="subtitle is-3">
+                Full Stack Web Developer
+            </h2>
+        </div>
+    </div>
+</section>
 
-    <section class="container" id="portfolio">
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <div class="container">
-                    <div id="accordion" role="tablist">
-                        <h1>Selected Projects</h1>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="app1">
-                                <h5 class="mb-0">
-                                    <a class="white" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-                                        Transit App
-                                    </a>
-                                </h5>
-                            </div>
+<!-- About -->
+<section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading">
+        <h3 class="title is-2">About Me</h3>
+        <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
+        <div class="container">
+            <p>Full Stack Web developer with a engineering degree and strong experience and extensive knowledge of modern Web techniques.</p>
+            <p>Looking for an opportunity to work and upgrade, as well as being involved in an organization gaining a competitive edge.</p>
+        </div>
+    </div>
 
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img class="app-image" src="images/transit-app.png" alt="" class="rounded">
-                                            </div>
-                                            <div class="col">
-                                                <p>Using Google Maps API, this application provides transit options and instructions
-                                                    from Point A to Point B, thereby enabling fuel conservation, encouraging
-                                                    public transportation. </p>
-                                                <hr>
-                                                <br>
-                                                <p>Skills Used</p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>Html</li>
-                                                            <li>CSS</li>
-                                                            <li>Javascript</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>jQuery</li>
-                                                            <li>Google Maps API</li>
-                                                            <li>Bootstrap</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <br>
-                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Transit-Info-App" target="_blank" role="button">Code</a>
-                                                <a class="btn btn-info" href="https://lavanya-sethuraman.github.io/Transit-Info-App/" target="_blank" role="button">Demo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="app2">
-                                <h5 class="mb-0">
-                                    <a class="white" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-                                        Movie Diary
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img class="app-image" src="images/movie-diary.png" alt="" class="rounded">
-                                            </div>
-                                            <div class="col">
-                                                <p>"Memories make us rich". This web application captures memories of the fun
-                                                    times associated with watching movies and capturing the same in a diary
-                                                    format. Using TMDB API, lookup a movie, get details and store as a "memory"
-                                                    card in the app. </p>
-                                                <hr>
-                                                <br>
-                                                <p>Skills Used</p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>Node.js</li>
-                                                            <li>Express.js</li>
-                                                            <li>Passport.js</li>
-                                                            <li>Tmdb Api</li>
+    <div class="columns has-same-height">
+        <div class="column">
+            <!-- Profile -->
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="title is-4">Profile</h3>
 
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>Semantic UI</li>
-                                                            <li> Mocha</li>
-                                                            <li>Chai</li>
-                                                            <li>mLab</li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <br>
-                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/Node-Capstone" target="_blank" role="button">Code</a>
-                                                <a class="btn btn-info" href="https://movie-diary.herokuapp.com/" target="_blank" role="button">Demo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" role="tab" id="app3">
-                                <h5 class="mb-0">
-                                    <a class="white" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-                                        Expense Manager
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img class="app-image" src="images/expense-manager.png" alt="" class="rounded">
-                                            </div>
-                                            <div class="col">
-                                                <p>Using newer UI frameworks and technologies, this responsive web application
-                                                    allows the user to set monthly budget by category, add expenses and view
-                                                    history using charts. Backend functionality is implemented using Node.js
-                                                    tech stack. Developed using functional programming where applicable.</p>
-                                                <hr>
-                                                <br>
-                                                <p>Skills Used</p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>React.js</li>
-                                                            <li>Redux</li>
-                                                            <li>Material UI</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li> Node.js</li>
-                                                            <li>mLab</li>
-                                                            <li>Enzyme</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <br>
-                                                <a class="btn btn-info" href="https://github.com/lavanya-sethuraman/expense-manager-client" target="_blank" role="button">Code</a>
-                                                <a class="btn btn-info" href="https://expense-manager.netlify.com/" target="_blank" role="button">Demo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="content">
+                        <table class="table-profile">
+                            <tr>
+                                <th colspan="1"></th>
+                                <th colspan="2"></th>
+                            </tr>
+                            <tr>
+                                <td>Location:</td>
+                                <td>Atlanta GA</td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>lavanya.sethuraman23@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="buttons is-centered">
+                        <a href="https://github.com/melavanya" target="_blank" class="button is-info is-rounded">
+                            <span class="icon">
+            <i class="fab fa-github"></i>
+            </span></a>
+                        <a href="https://www.linkedin.com/in/lavanyasethuraman/" target="_blank" class="button is-info is-rounded">
+                            <span class="icon">
+            <i class="fab fa-linkedin-in"></i>
+            </span></a>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    </section>
+        <div class="column">
+            <!-- Skills -->
+            <div class="card">
+                <div class="card-content skills-content">
+                    <h3 class="title is-4">Skills</h3>
+                    <div class="content">
 
-    <hr class="my-4">
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>JavaScript:</strong>
+                                        <br>
+                                        <progress class="progress is-info" value="90" max="100"></progress>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
 
-    <section class="container" id="contact">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container contact">
-                <h1>Contact Details</h1>
-                <p></p>
-                <a style="font-size: 20px" href="mailto:lavanya.sethuraman23@gmail.com">lavanya.sethuraman23@gmail.com</a>
-                <p></p>
-                <p>
-                    <a href="https://www.linkedin.com/in/lavanya-sethuraman" target="_blank ">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://github.com/lavanya-sethuraman" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                </p>
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>React.js:</strong>
+                                        <br>
+                                        <progress class="progress is-info" value="90" max="100"></progress>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Node.js:</strong>
+                                        <br>
+                                        <progress class="progress is-info" value="90" max="100"></progress>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>HTML5/CSS3</strong>
+                                        <br>
+                                        <progress class="progress is-info" value="95" max="100"></progress>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Angular.js:</strong>
+                                        <br>
+                                        <progress class="progress is-info" value="70" max="100"></progress>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Databases</strong>
+                                        <br>
+                                        <progress class="progress is-info" value="70" max="100"></progress>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p style="padding-top: 1rem">Made with ❤ by Lavanya Sethuraman</p>
-    </footer>
+<!-- Skills tags -->
+ <br>
+      <div class="tags custom-tags">
+        <span class="tag is-dark">Node.js</span><span class="tag is-dark">Express.js</span><span class="tag is-dark">React.js</span><span
+          class="tag is-dark">JavaScript</span><span class="tag is-dark">Typescript</span><span class="tag is-dark">HTML5</span><span class="tag is-dark">Angular.js</span><span
+          class="tag is-dark">CSS3</span><span class="tag is-dark">Bulma</span><span class="tag is-dark">Bootstrap</span><span
+          class="tag is-dark">jQuery</span><span class="tag is-dark">Semantic-UI</span><span class="tag is-dark">Material-Design</span><span
+          class="tag is-dark">SASS/SCSS</span><span class="tag is-dark">Webpack</span><span class="tag is-dark">Git</span><span
+          class="tag is-dark">Kubernetes</span><span class="tag is-dark">MySQL</span><span class="tag is-dark">MongoDB</span>
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+<!-- Services -->
+<section class="section" id="services">
+    <div class="section-heading">
+        <h3 class="title is-2">Services</h3>
+        <h4 class="subtitle is-5">What can I do for you?</h4>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <div class="content">
+                        <h4 class="title is-5">Front End Web Development</h4>
+                        Develop Front End using latest standards with HTML5/CSS3 with added functionality using JavaScript and
+                        React.js or Angular.js.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <div class="content">
+                        <h4 class="title is-5">Back End Web Development</h4>
+                        Develop Back End application/service using Node.js MySQL server or Mongo DB databases.
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <div class="content">
+                        <h4 class="title is-5">Full Stack Web Development</h4>
+                        Develop Full Stack applications/service using Javascript.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume -->
+<section class="section" id="resume">
+    <div class="section-heading">
+        <h3 class="title is-2">Resume</h3>
+        <h4 class="subtitle is-5">More about my Work Experience</h4>
+        <a href="Resume.pdf" target="_blank" class="button is-info is-medium">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+            <span>Download My Resume</span>
+        </a>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section class="section" id="portfolio">
+    <div class="container">
+        <div class="section-heading">
+            <h3 class="title is-2">Portfolio</h3>
+            <h4 class="subtitle is-5">My Projects</h4>
+        </div>
+        <br>
+
+        <div class="container portfolio-container">
+            <div class="columns">
+                <div class="column">
+                    <!-- Mygdc -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>GoDirect Flight Services</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/mygdc.png" alt="Landing template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.mygdc.com/new/index.php/flight_plan/flight_plans_list" target="_blank" class="card-footer-item">Website</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Dashboard -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>BA Dashboard</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/BASPOG.png" alt="Landing template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://ba.qaerospace1.honeywell.com/" target="_blank" class="card-footer-item">Website</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Cashel -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>Cashel House Group</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/cashel.png" alt="Landing template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://account.cashelhg.com" target="_blank" class="card-footer-item">Website</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <!-- GMS -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>GMS</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/gms.png" alt="Landing template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.gms.com/find-a-yard" target="_blank" class="card-footer-item">Website</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Rubicor -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>Rubicor Group</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/rubicor.png" alt="Landing template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.rubicor.com.au/" target="_blank" class="card-footer-item">Website</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Project management -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>Project Management Tool(Fun Project)</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/project-management-tool.png" alt="Landing template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://project-management-tool.netlify.com/" target="_blank" class="card-footer-item">Demo</a>
+                            <a href="https://github.com/melavanya/Pro5-Solutions" target="_blank" class="card-footer-item">Source</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <!-- Public Transit -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>Public Transit(Fun Project)</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/transit-app.png" alt="Cards template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://melavanya.github.io/Public-Transit/" target="_blank" class="card-footer-item">Demo</a>
+                            <a href="https://github.com/melavanya/Public-Transit" target="_blank" class="card-footer-item">Source</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Movie Diary -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>Movie Diary(Fun Project)</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/movie-diary.png" alt="Hero template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://movie-diary.herokuapp.com/" target="_blank" class="card-footer-item">Demo</a>
+                            <a href="https://github.com/melavanya/Node-Capstone" target="_blank" class="card-footer-item">Source</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- Expense Manager -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span>Expense Manager(Fun Project)</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <figure class="image">
+                                <img src="images/expense-manager.png" alt="Landing template screenshot">
+                            </figure>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://expense-manager.netlify.com/" target="_blank" class="card-footer-item">Demo</a>
+                            <a href="https://github.com/melavanya/expense-manager-client" target="_blank" class="card-footer-item">Source</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer ftr">
+    <div class="section-heading">
+    <h4 class="subtitle is-6">Made with ❤ by Lavanya Sethuraman</h4>
+    </div>
+</footer>
 </body>
 
 </html>
