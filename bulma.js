@@ -3,8 +3,8 @@
     const menu = document.querySelector('#'+burger.dataset.target);
     const item = document.querySelector('.navbar-end');
     burger.addEventListener('click', function() {
-        burger.classList.add('is-active');
-        menu.classList.add('is-active');
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
     });
 
     item.addEventListener('click', () => {
