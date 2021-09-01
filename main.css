@@ -50,3 +50,9 @@ th {
 .navbar-start .navbar-item {
     color:white;
 }
+.dev {
+    display: flex;
+}
+.box {
+    width: 100%;
+}
