@@ -11,4 +11,12 @@
         burger.classList.remove('is-active');
         menu.classList.remove('is-active');
     });
-})();
+}
+)();
+// Initialize all elements with carousel class.
+bulmaCarousel.attach('#carousel', {
+    slidesToScroll: 3,
+    slidesToShow: 4,
+    infinite: true,
+    pagination: false
+});
