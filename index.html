@@ -7,492 +7,688 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Porfolio</title>
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" rel="stylesheet">
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+
     <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script async src="bulma.js" type="text/javascript"></script>
 </head>
 
 <body>
-<!-- Navigation bar -->
-<nav class="navbar is-link is-fixed-top">
-    <div class="navbar-brand">
-        <div class="navbar-start">
-            <a class="navbar-item" href="#hero">
-                <span>Lavanya Sethuraman</span>
-            </a>
-        </div>
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <div class="navbar-menu" id="navbarExampleTransparentExample">
-        <div class="navbar-end">
-            <a class="navbar-item" href="#about">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-                <span>About</span>
-            </a>
-            <a class="navbar-item" href="#services">
-          <span class="icon">
-            <i class="fas fa-bars"></i>
-          </span>
-                <span>Services</span>
-            </a>
-            <a class="navbar-item" href="#resume">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-                <span>Resume</span>
-            </a>
-            <a class="navbar-item" href="#portfolio">
-          <span class="icon">
-            <i class="fas fa-th-list"></i>
-          </span>
-                <span>Portfolio</span>
-            </a>
-        </div>
-    </div>
-</nav>
-
-<!-- Header -->
-<section class="hero is-info is-fullheight is-fullheight-with-navbar" id="hero">
-    <div class="hero-body">
-        <div class="container">Hello! I am
-            <h1 class="title is-1">
-                Lavanya Sethuraman
-            </h1>
-            <h2 class="subtitle is-3">
-                Full Stack Web Developer
-            </h2>
-        </div>
-    </div>
-</section>
-
-<!-- About -->
-<section class="section" id="about">
-    <!-- Title -->
-    <div class="section-heading">
-        <h3 class="title is-2">About Me</h3>
-        <div class="container">
-            <p>Full Stack Web developer with a engineering degree and strong experience and extensive knowledge of
-                modern Web techniques.</p>
-            <p>Looking for an opportunity to work and upgrade, as well as being involved in an organization gaining a
-                competitive edge.</p>
-        </div>
-    </div>
-
-    <div class="columns has-same-height">
-        <div class="column">
-            <!-- Profile -->
-            <div class="card">
-                <div class="card-content">
-                    <h3 class="title is-4">Profile</h3>
-                    <div class="content">
-                        <table class="table-profile">
-                            <tr>
-                                <td>Location:
-                                    <span class="">Atlanta GA</span></td>
-                            </tr>
-                            <tr>
-                                <td>Email:
-                                lavanya.sethuraman23@gmail.com</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <br>
-                    <div class="buttons is-centered">
-                        <a class="button is-info is-rounded" href="https://github.com/melavanya" target="_blank">
-                            <span class="icon">
-            <i class="fab fa-lg fa-github"></i>
-            </span></a>
-                        <a class="button is-info is-rounded" href="https://www.linkedin.com/in/lavanyasethuraman/"
-                           target="_blank">
-                            <span class="icon">
-            <i class="fab fa-linkedin-in"></i>
-            </span></a>
-                    </div>
-                </div>
+    <!-- Navigation bar -->
+    <nav class="navbar is-link is-fixed-top">
+        <div class="navbar-brand">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#hero">
+                    <span>Lavanya Sethuraman</span>
+                </a>
             </div>
-        </div>
-        <div class="column">
-            <!-- Skills -->
-            <div class="card">
-                <div class="card-content skills-content">
-                    <h3 class="title is-4">Proficiency</h3>
-                    <div class="content">
-                        <article class="media">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>JavaScript</strong>
-                                        <br>
-                                        <progress class="progress is-info" max="100" value="90"></progress>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="media">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>ReactJS</strong>
-                                        <br>
-                                        <progress class="progress is-info" max="100" value="90"></progress>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="media">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>NodeJS</strong>
-                                        <br>
-                                        <progress class="progress is-info" max="100" value="90"></progress>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="media">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>HTML5/CSS3</strong>
-                                        <br>
-                                        <progress class="progress is-info" max="100" value="95"></progress>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="media">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Angular</strong>
-                                        <br>
-                                        <progress class="progress is-info" max="100" value="70"></progress>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="media">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Databases</strong>
-                                        <br>
-                                        <progress class="progress is-info" max="100" value="70"></progress>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <!-- Skills -->
-            <div class="card">
-            <div class="card-content">
-                <h3 class="title is-4">Skills</h3>
-                <div class="content">
-                    <div class="tags custom-tags">
-                        <span class="tag is-info">ReactJS</span>
-                        <span class="tag is-info">Angular2</span>
-                        <span class="tag is-info">AngularJS</span>
-                        <span class="tag is-info">NodeJS</span>
-                        <span class="tag is-info">ExpressJS</span>
-                        <span class="tag is-info">NestJS</span>
-                        <span class="tag is-info">Javascript</span>
-                        <span class="tag is-info">Typescript</span>
-                        <span class="tag is-info">HTML5</span>
-                        <span class="tag is-info">CSS3</span>
-                        <span class="tag is-info">Webpack</span>
-                        <span class="tag is-info">Git</span>
-                        <span class="tag is-info">Bulma</span>
-                        <span class="tag is-info">Bootstrap</span>
-                        <span class="tag is-info">SemanticUI</span>
-                        <span class="tag is-info">Material Design</span>
-                        <span class="tag is-info">JQuery</span>
-                        <span class="tag is-info">MongoDB</span>
-                        <span class="tag is-info">MySql</span>
-                        <span class="tag is-info">Kubernetes</span>
-                    </div>
-                </div>
-                <br>
-            </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Services -->
-<section class="section" id="services">
-    <div class="section-heading">
-        <h3 class="title is-2">Services</h3>
-        <h4 class="subtitle is-5">What can I do for you?</h4>
-    </div>
-    <div class="container">
-        <div class="columns">
-            <div class="column">
-                <div class="box">
-                    <div class="content">
-                        <h4 class="title is-5">Front End Web Development</h4>
-                        Develop Front End using latest standards with HTML5/CSS3 with added functionality using
-                        JQuery, React.js or Angular.js.
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="box">
-                    <div class="content">
-                        <h4 class="title is-5">Back End Web Development</h4>
-                        Develop Back End application/service using Node.js(ExpressJS, NestJS) RDBMS(MySQL) or Non-RDBMS (Mongo DB) databases.
-                    </div>
-                </div>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
 
-        <div class="columns">
-            <div class="column">
-                <div class="box">
-                    <div class="content">
-                        <h4 class="title is-5">Full Stack Web Development</h4>
-                        Develop Full Stack applications/service using Javascript.
-                    </div>
-                </div>
+        <div class="navbar-menu" id="navbarExampleTransparentExample">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">
+                    <span class="icon">
+                        <i class="fas fa-info"></i>
+                    </span>
+                    <span>About</span>
+                </a>
+                <a class="navbar-item" href="#services">
+                    <span class="icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <span>Services</span>
+                </a>
+                <a class="navbar-item" href="#resume">
+                    <span class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span>Resume</span>
+                </a>
+                <a class="navbar-item" href="#portfolio">
+                    <span class="icon">
+                        <i class="fas fa-th-list"></i>
+                    </span>
+                    <span>Portfolio</span>
+                </a>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Resume -->
-<section class="section" id="resume">
-    <div class="section-heading">
-        <h3 class="title is-2">Resume</h3>
-        <h4 class="subtitle is-5">More about my Work Experience</h4>
-        <a class="button is-info is-medium" href="Resume.pdf" target="_blank">
-        <span class="icon">
-          <i class="fas fa-file-alt"></i>
-        </span>
-            <span>Download My Resume</span>
-        </a>
-    </div>
-</section>
+    <!-- Header -->
+    <section class="hero is-info is-fullheight is-fullheight-with-navbar" id="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Lavanya Sethuraman
+                </h1>
+                <h2 class="subtitle is-3">
+                    Full Stack Web Developer
+                </h2>
+            </div>
+        </div>
+    </section>
 
-<!-- Portfolio -->
-<section class="section" id="portfolio">
-    <div class="container">
+    <!-- About -->
+    <section class="section" id="about">
+        <!-- Title -->
         <div class="section-heading">
-            <h3 class="title is-2">Portfolio</h3>
-            <h4 class="subtitle is-5">My Projects</h4>
+            <h3 class="title is-2">About Me</h3>
+            <div class="container">
+                <p>Full Stack Web developer with an engineering degree, experience and extensive knowledge of
+                    modern Web techniques.</p>
+                <p>Looking for an opportunity to work, upgrade, and contribute to an organization gaining
+                    competitive edge.</p>
+            </div>
         </div>
-        <br>
 
-        <div class="container portfolio-container">
-            <div class="columns">
-                <div class="column">
-                    <!-- Mygdc -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>GoDirect Flight Services</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Landing template screenshot" src="images/mygdc.png">
-                            </figure>
+        <div class="columns has-same-height">
+            <div class="column">
+                <!-- Profile -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="title is-4">Profile</h3>
+                        <div class="content">
+                            <table class="table-profile">
+                                <tr>
+                                    <td>Location:
+                                        <span class="">Atlanta GA</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email:
+                                        lavanya.sethuraman23@gmail.com</td>
+                                </tr>
+                            </table>
                         </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://www.mygdc.com/new/index.php/flight_plan/flight_plans_list"
-                               target="_blank">Website</a>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <!-- Dashboard -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>BA Dashboard</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Landing template screenshot" src="images/BASPOG.png">
-                            </figure>
+                        <br>
+                        <div class="buttons is-centered">
+                            <a class="button is-info is-rounded" href="https://github.com/melavanya" target="_blank">
+                                <span class="icon">
+                                    <i class="fab fa-lg fa-github"></i>
+                                </span></a>
+                            <a class="button is-info is-rounded" href="https://www.linkedin.com/in/melavanya/"
+                                target="_blank">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </span></a>
                         </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://ba.qaerospace1.honeywell.com/" target="_blank">Website</a>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <!-- Cashel -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>Cashel House Group</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Landing template screenshot" src="images/cashel.png">
-                            </figure>
-                        </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://account.cashelhg.com" target="_blank">Website</a>
-                        </footer>
                     </div>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
-                    <!-- GMS -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>GMS</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Landing template screenshot" src="images/gms.png">
-                            </figure>
+            <div class="column">
+                <!-- Skills -->
+                <div class="card">
+                    <div class="card-content skills-content">
+                        <h3 class="title is-4">Proficiency</h3>
+                        <div class="content">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>JavaScript</strong>
+                                            <br>
+                                            <progress class="progress is-info" max="100" value="95"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Angular</strong>
+                                            <br>
+                                            <progress class="progress is-info" max="100" value="95"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>ReactJS</strong>
+                                            <br>
+                                            <progress class="progress is-info" max="100" value="95"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>NodeJS</strong>
+                                            <br>
+                                            <progress class="progress is-info" max="100" value="95"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>HTML5/CSS3</strong>
+                                            <br>
+                                            <progress class="progress is-info" max="100" value="95"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Databases</strong>
+                                            <br>
+                                            <progress class="progress is-info" max="100" value="85"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://www.gms.com/find-a-yard"
-                               target="_blank">Website</a>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <!-- Rubicor -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>Rubicor Group</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Landing template screenshot" src="images/rubicor.png">
-                            </figure>
-                        </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://www.rubicor.com.au/" target="_blank">Website</a>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <!-- Project management -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>Project Management Tool(Fun Project)</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Landing template screenshot" src="images/project-management-tool.png">
-                            </figure>
-                        </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://project-management-tool.netlify.com/"
-                               target="_blank">Demo</a>
-                            <a class="card-footer-item" href="https://github.com/melavanya/Pro5-Solutions"
-                               target="_blank">Source</a>
-                        </footer>
                     </div>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
-                    <!-- Public Transit -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>Public Transit(Fun Project)</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Cards template screenshot" src="images/transit-app.png">
-                            </figure>
+            <div class="column">
+                <!-- Skills -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="title is-4">Skills</h3>
+                        <div class="content">
+                            <div class="tags custom-tags">
+                                <span class="tag is-info">ReactJS</span>
+                                <span class="tag is-info">Angular2</span>
+                                <span class="tag is-info">AngularJS</span>
+                                <span class="tag is-info">Ionic</span>
+                                <span class="tag is-info">NodeJS</span>
+                                <span class="tag is-info">ExpressJS</span>
+                                <span class="tag is-info">NestJS</span>
+                                <span class="tag is-info">Javascript</span>
+                                <span class="tag is-info">Typescript</span>
+                                <span class="tag is-info">HTML5</span>
+                                <span class="tag is-info">CSS3</span>
+                                <span class="tag is-info">Docker</span>
+                                <span class="tag is-info">SQL</span>
+                                <span class="tag is-info">OutSystems</span>
+                                <span class="tag is-info">Webpack</span>
+                                <span class="tag is-info">Git</span>
+                                <span class="tag is-info">Bulma</span>
+                                <span class="tag is-info">Bootstrap</span>
+                                <span class="tag is-info">SemanticUI</span>
+                                <span class="tag is-info">Material Design</span>
+                                <span class="tag is-info">JQuery</span>
+                                <span class="tag is-info">MongoDB</span>
+                                <span class="tag is-info">MySql</span>
+                                <span class="tag is-info">Kubernetes</span>
+                                <span class="tag is-info">Onesignal</span>
+                                <span class="tag is-info">Codepush</span>
+                            </div>
                         </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://melavanya.github.io/Public-Transit/"
-                               target="_blank">Demo</a>
-                            <a class="card-footer-item" href="https://github.com/melavanya/Public-Transit"
-                               target="_blank">Source</a>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <!-- Movie Diary -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>Movie Diary(Fun Project)</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Hero template screenshot" src="images/movie-diary.png">
-                            </figure>
-                        </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://movie-diary.herokuapp.com/"
-                               target="_blank">Demo</a>
-                            <a class="card-footer-item" href="https://github.com/melavanya/Node-Capstone"
-                               target="_blank">Source</a>
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <!-- Expense Manager -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span>Expense Manager(Fun Project)</span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img alt="Landing template screenshot" src="images/expense-manager.png">
-                            </figure>
-                        </div>
-                        <footer class="card-footer">
-                            <a class="card-footer-item" href="https://expense-manager.netlify.com/"
-                               target="_blank">Demo</a>
-                            <a class="card-footer-item" href="https://github.com/melavanya/expense-manager-client"
-                               target="_blank">Source</a>
-                        </footer>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="footer ftr">
-    <div class="section-heading">
-        <h4 class="subtitle is-6">Made with ❤ by Lavanya Sethuraman</h4>
-    </div>
-</footer>
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="section-heading">
+            <h3 class="title is-2">Services</h3>
+            <h4 class="subtitle is-5">What can I do for you?</h4>
+        </div>
+        <div class="container">
+            <div class="columns">
+                <div class="column dev">
+                    <div class="box">
+                        <div class="content">
+                            <h4 class="title is-5">Front End Web Development</h4>
+                            Develop Front End using latest standards with HTML5/CSS3 with added functionality using
+                            JQuery, React.js, Angular.js or Angular9 styled using several different CSS frameworks.
+                        </div>
+                    </div>
+                </div>
+                <div class="column dev">
+                    <div class="box">
+                        <div class="content">
+                            <h4 class="title is-5">Back End Web Development</h4>
+                            Develop Back End application/service using Node.js(ExpressJS, NestJS) RDBMS(MySQL) or
+                            Non-RDBMS (Mongo DB) databases.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column dev">
+                    <div class="box">
+                        <div class="content">
+                            <h4 class="title is-5">Full Stack Web Development</h4>
+                            Develop Full Stack applications/service using the best Javascript frameworks and libraries.
+                        </div>
+                    </div>
+                </div>
+                <div class="column dev">
+                    <div class="box">
+                        <div class="content">
+                            <h4 class="title is-5">Mobile Development</h4>
+                            Develop Mobile applications using Ionic/Cordova or OutSystems and publish it to IOS/Android
+                            stores.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section" id="resume">
+        <div class="section-heading">
+            <h3 class="title is-2">Resume</h3>
+            <h4 class="subtitle is-5">More about my Work Experience</h4>
+            <a class="button is-info is-medium" href="Resume.pdf" target="_blank">
+                <span class="icon">
+                    <i class="fas fa-file-alt"></i>
+                </span>
+                <span>Download My Resume</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h3 class="title is-2">Portfolio</h3>
+                <h4 class="subtitle is-5">My Projects</h4>
+            </div>
+            <br>
+
+            <div class="container portfolio-container">
+                <div class="carousel" id="carousel">
+                    <div class="item-1">
+                        <!-- Worker eff -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Worker Efficiency</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/wrkeff.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item">Internal Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <!-- Termination portal -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Termination Portal</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/term.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item">Internal Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-3">
+                        <!--Training dashboard-->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Training Dashboard</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/training-dash.PNG">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item">Internal Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-4">
+                        <!-- Cmms -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>CMMS</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/cmms.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item">Internal Mobile App</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-5">
+                        <!-- Training -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Training App</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/training.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item">Internal Mobile App</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-6">
+                        <!-- FIS -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>FIS Banking</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/fis.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://www.fisglobal.com/" target="_blank">Internal
+                                    Mobile App</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-7">
+                        <!-- Mygdc -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>GoDirect Flight Services</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/mygdc.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item"
+                                    href="https://www.mygdc.com/new/index.php/flight_plan/flight_plans_list"
+                                    target="_blank">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-8">
+                        <!-- Dashboard -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>BA Dashboard</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/BASPOG.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://ba.qaerospace1.honeywell.com/"
+                                    target="_blank">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-9">
+                        <!-- Cashel -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Cashel House Group</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/cashel.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://account.cashelhg.com"
+                                    target="_blank">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-10">
+                        <!-- GMS -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>GMS</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/gms.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://www.gms.com/find-a-yard"
+                                    target="_blank">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-11">
+                        <!-- Rubicor -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Rubicor Group</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/rubicor.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://www.rubicor.com.au/"
+                                    target="_blank">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-12">
+                        <!-- My Ionic Project -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Ionic App(Fun Project)</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Cards template screenshot" src="images/myionic.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://melavanya.github.io/MyIonicProject/"
+                                    target="_blank">Demo</a>
+                                <a class="card-footer-item" href="https://github.com/melavanya/MyIonicProject"
+                                    target="_blank">Source</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-13">
+                        <!-- Termination Prototype -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Termination Prototype(Fun Project)</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Hero template screenshot" src="images/termtemplate.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://melavanya.github.io/termtemplate/"
+                                    target="_blank">Demo</a>
+                                <a class="card-footer-item" href="https://github.com/melavanya/termtemplate"
+                                    target="_blank">Source</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-14">
+                        <!-- Cmms-insertion -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Loopback Tracking(Fun Project)</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/cmms-insertion.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://melavanya.github.io/Reactive-forms/"
+                                    target="_blank">Demo</a>
+                                <a class="card-footer-item" href="https://github.com/melavanya/Reactive-forms"
+                                    target="_blank">Source</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-15">
+                        <!-- Project management -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Project Management Tool(Fun Project)</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/project-management-tool.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://project-management-tool.netlify.com/"
+                                    target="_blank">Demo</a>
+                                <a class="card-footer-item" href="https://github.com/melavanya/Pro5-Solutions"
+                                    target="_blank">Source</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-16">
+                        <!-- Public Transit -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Public Transit(Fun Project)</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Cards template screenshot" src="images/transit-app.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://melavanya.github.io/Public-Transit/"
+                                    target="_blank">Demo</a>
+                                <a class="card-footer-item" href="https://github.com/melavanya/Public-Transit"
+                                    target="_blank">Source</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-17">
+                        <!-- Movie Diary -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Movie Diary(Fun Project)</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Hero template screenshot" src="images/movie-diary.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://movie-diary.herokuapp.com/"
+                                    target="_blank">Demo</a>
+                                <a class="card-footer-item" href="https://github.com/melavanya/Node-Capstone"
+                                    target="_blank">Source</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="item-18">
+                        <!-- Expense Manager -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Expense Manager(Fun Project)</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                    <img alt="Landing template screenshot" src="images/expense-manager.png">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a class="card-footer-item" href="https://expense-manager.netlify.com/"
+                                    target="_blank">Demo</a>
+                                <a class="card-footer-item" href="https://github.com/melavanya/expense-manager-client"
+                                    target="_blank">Source</a>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer ftr">
+        <div class="section-heading">
+            <h4 class="subtitle is-6">Made with ❤ by Lavanya Sethuraman</h4>
+        </div>
+    </footer>
 </body>
 
 </html>
