@@ -13,7 +13,6 @@
     });
 }
 )();
-// Initialize all elements with carousel class.
 bulmaCarousel.attach('#carousel', {
     slidesToScroll: 3,
     slidesToShow: 4,
